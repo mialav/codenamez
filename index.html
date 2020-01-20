@@ -16,7 +16,7 @@
             <div class="timer">
                 <h3>Time: <span>1:00</span></h3>
             </div>
-            <div class="start"><input type="submit" value="START"></div>
+            <div class="start"><button>START</button></div>
             <div class="points">
                 <h3>Points: <span>0</span></h3>               
             </div>
@@ -26,35 +26,52 @@
           <h2>Cards</h2>
           <table>
             <tr>
-              <td class="word word1">Word 1</td>
-              <td class="word word2">Word 2</td>
-              <td class="word word3">Word 3</td>
+              <td class="word word1">Codenamez</td>
+              <td class="word word2">Codenamez</td>
+              <td class="word word3">Codenamez</td>
             </tr>
             <tr>
-              <td class="word word4">Word 4</td>
-              <td class="word word5">Word 5</td>
-              <td class="word word6">Word 6</td>
+              <td class="word word4">Codenamez</td>
+              <td class="word word5">Codenamez</td>
+              <td class="word word6">Codenamez</td>
             </tr>
             <tr>
-              <td class="word word7">Word 7</td>
-              <td class="word word8">Word 8</td>
-              <td class="word word9">Word 9</td>
+              <td class="word word7">Codenamez</td>
+              <td class="word word8">Codenamez</td>
+              <td class="word word9">Codenamez</td>
             </tr>
           </table>
         </div>
         <div class="categories">
           <h2>Categories</h2>
+          <div class="form">
           <form action="#">
-              <input type="text" name="category"><input type="submit" value="GO">
-              <p class="category"></p>
+              <input type="text" name="category" placeholder="Enter category"><input type="submit" value="GO">
+            </div>
+              <p class="category"><ul>
+                <li>Category</li>
+                <li>Category</li>
+                <li>Category</li>
+                <li>Category</li>
+                <li>Category</li>
+                <li>Category</li>
+            </ul></p>
+              
           </form>
         </div>
       </div>
       <div class="instructions">
         <h2>Instructions</h2>
+        <ol class="rules">
+            <li>Press start to reveal the words on the cards and to start the timer.</li>
+            <li>Enter categories that match as many words as possible into the input box on the right.</li>
+            <li>If a category matches more than one word, you get one point per matched word (e.g. 2 words = 2 points, 3 words = 3 points).</li>
+            <li>The game is finished after one minute.</li>
+        </ol>
+        <p>Hint: Categories are always one word, singular.</p>
       </div>
     </div>
-    <div class="footer"></div>
+    <!-- <div class="footer"></div> -->
 
     <script src="script.js"></script>
   </body>

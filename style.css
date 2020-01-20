@@ -10,40 +10,68 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 5%;
+  /* background-image: url("images/download.png");
+  background-attachment: fixed; */
+}
+
+.header {
+  margin-top: 10vh;
+  padding: 10px;
+  background: #000000;
+  width: auto;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
 
 h2 {
-    margin: 2%;
+  margin: 2%;
+}
+
+button {
+  padding: 5px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
 }
 
 /* Game */
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 80%;
+  padding: 10px;
 }
 
 .time-and-points {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .timer .points {
-    align-self: center;
+  align-self: center;
 }
 
 .game {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 80vw;
+  box-sizing: border-box;
 }
 
 .game > div {
@@ -63,12 +91,11 @@ table {
   width: 100%;
   height: 70%;
 }
- .cards td {
-    text-align: center;
-    padding: -10px;
-    border: 1px solid pink;
-    border-radius: 5px;
-} 
+.cards td {
+  text-align: center;
+  border: 1px solid pink;
+  border-radius: 5px;
+}
 
 .categories {
   width: 30%;
@@ -76,25 +103,36 @@ table {
   border: 1px dotted #ffffff;
 }
 
-input:text {
-    width: 70%;
-    height: 2em;
-    font-size: 1.1em;
+.categories ul {
+  padding: 10px;
 }
-input:submit {
-    width: 
-    height: 2em;
-    font-size: 1.1em;
+
+input[type="text"] {
+  width: 70%;
+  height: 2em;
+  padding: 2px;
+  font-size: 1.1em;
+}
+input[type="submit"] {
+  height: 2em;
+  padding: 7px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin-left: 15px;
 }
 
 /* Instructions */
 
 .instructions {
-  width: 70vw;
-  height: 20vh;
+  width: 50%;
   border: 1px dotted #ffffff;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.rules {
+  width: 70%;
+  margin-left: 30px;
 }
 
 /* Footer */
