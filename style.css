@@ -1,0 +1,100 @@
+/* General */
+* {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+h2 {
+    margin: 2%;
+}
+
+/* Game */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time-and-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.timer .points {
+    align-self: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.game > div {
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.cards {
+  width: 70%;
+  height: 50vh;
+  border: 1px dotted #ffffff;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  height: 70%;
+}
+ .cards td {
+    text-align: center;
+    padding: -10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+} 
+
+.categories {
+  width: 30%;
+  height: 50vh;
+  border: 1px dotted #ffffff;
+}
+
+input:text {
+    width: 70%;
+    height: 2em;
+    font-size: 1.1em;
+}
+input:submit {
+    width: 
+    height: 2em;
+    font-size: 1.1em;
+}
+
+/* Instructions */
+
+.instructions {
+  width: 70vw;
+  height: 20vh;
+  border: 1px dotted #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Footer */
