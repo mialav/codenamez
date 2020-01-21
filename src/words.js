@@ -286,7 +286,7 @@ let words = [
   },
   {
     word: "Helsinki",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "city", "Europe"]
   },
   {
     word: "Stockholm",

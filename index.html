@@ -14,11 +14,11 @@
     <div class="content">
         <div class="time-and-points">
             <div class="timer">
-                <h3>Time: <span>1:00</span></h3>
+                <h3>Time: <span id="minutes">02</span>:<span id="seconds">00</span></h3>
             </div>
-            <div class="start"><button>START</button></div>
+            <div class="start"><button class="start-btn">START</button></div>
             <div class="points">
-                <h3>Points: <span>0</span></h3>               
+                <h3>Points: <span id="point-amount">0</span></h3>               
             </div>
         </div>
       <div class="game">
@@ -26,35 +26,35 @@
           <h2>Cards</h2>
           <table>
             <tr>
-              <td class="word word1">Codenamez</td>
-              <td class="word word2">Codenamez</td>
-              <td class="word word3">Codenamez</td>
+              <td class="word word1">)(#€")U</td>
+              <td class="word word2">"€(/#"€""</td>
+              <td class="word word3">%#€"?#=</td>
             </tr>
             <tr>
-              <td class="word word4">Codenamez</td>
-              <td class="word word5">Codenamez</td>
-              <td class="word word6">Codenamez</td>
+              <td class="word word4">€#/)(#"€</td>
+              <td class="word word5">!"=(€#</td>
+              <td class="word word6">%#/(€/"</td>
             </tr>
             <tr>
-              <td class="word word7">Codenamez</td>
-              <td class="word word8">Codenamez</td>
-              <td class="word word9">Codenamez</td>
+              <td class="word word7">%#)(%€</td>
+              <td class="word word8">#%)(€</td>
+              <td class="word word9">!"=)€#(/</td>
             </tr>
           </table>
         </div>
         <div class="categories">
           <h2>Categories</h2>
           <div class="form">
-          <form action="#">
-              <input type="text" name="category" placeholder="Enter category"><input type="submit" value="GO">
+          <form class="category-input" action="#">
+              <input type="text" name="category" placeholder="Enter category" id="guess" autocomplete="off"><input type="submit" value="GO">
             </div>
-              <p class="category"><ul>
+              <p class="category"><ul id="categories-correct">
+                <!-- <li>Category</li>
                 <li>Category</li>
                 <li>Category</li>
                 <li>Category</li>
                 <li>Category</li>
-                <li>Category</li>
-                <li>Category</li>
+                <li>Category</li> -->
             </ul></p>
               
           </form>
@@ -73,6 +73,9 @@
     </div>
     <!-- <div class="footer"></div> -->
 
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/buttons.js"></script>
+    <script src="src/words.js"></script>
+    <script src="src/timer.js"></script>
   </body>
 </html>
