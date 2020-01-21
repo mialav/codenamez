@@ -136,4 +136,8 @@ input[type="submit"] {
   margin-left: 30px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Footer */

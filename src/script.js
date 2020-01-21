@@ -20,6 +20,16 @@ function changeColor() {
   letters.innerHTML = join;
 }
 
+// SHOW/HIDE INSTRUCTIONS //
+let $instructions = document.querySelector(".instructions");
+console.log($instructions);
+let $rules = document.querySelector(".rules");
+
+$instructions.onclick = function() {
+  //
+  $rules.classList.toggle("hidden");
+};
+
 // RANDOM CARDS //
 
 // card slots in game board

@@ -8,9 +8,10 @@ $startButton.addEventListener("click", function() {
     if (startCounter < 1) {
     countdown(); 
     setInterval(changeColor, 100); 
-    addRandomCards(); 
+    addRandomCards();
     startCounter++;
 
+    $rules.classList.toggle("hidden");
     // turn start button to stop button
     /* 
     $startButton.classList.remove("start-btn");

@@ -1,5 +1,5 @@
 //set minutes
-var mins = 2;
+var mins = 1;
 
 //calculate the seconds
 var secs = mins * 60;
@@ -46,7 +46,7 @@ function Decrement() {
     //if seconds > 0 then seconds is decremented
     else {
       secs--;
-      setTimeout("Decrement()", 100);
+      setTimeout("Decrement()", 1000);
     }
   }
 }
