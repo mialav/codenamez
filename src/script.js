@@ -92,6 +92,8 @@ function guessCategory(e) {
     $categoriesCorrect.appendChild(correctCategory);
 
     totalPoints += categoryCounter;
+
+    $categoryInput.value = "";
   }
 
   $points.innerText = totalPoints;
