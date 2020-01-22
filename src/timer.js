@@ -1,5 +1,5 @@
 //set minutes
-var mins = 1;
+var mins = 0.5;
 
 //calculate the seconds
 var secs = mins * 60;
@@ -38,10 +38,10 @@ function Decrement() {
     //if seconds becomes zero,
     //then page alert time up
     if (mins < 0) {
-    //   alert("time up");
-    //   minutes.value = 0;
-    //   seconds.value = 0;
-    // clearTimeout();
+      //   alert("time up");
+      //   minutes.value = 0;
+      //   seconds.value = 0;
+      // clearTimeout();
     }
     //if seconds > 0 then seconds is decremented
     else {
@@ -64,7 +64,5 @@ function getseconds() {
 }
 
 function pad2(number) {
-   
-    return (number < 10 ? '0' : '') + number;
-  
+  return (number < 10 ? "0" : "") + number;
 }

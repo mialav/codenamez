@@ -72,7 +72,7 @@ $categoryInput.addEventListener("submit", guessCategory);
 function guessCategory(e) {
   e.preventDefault();
 
-  let newGuess = document.getElementById("guess").value;
+  let newGuess = document.getElementById("guess").value.toLowerCase();
 
   let correctCategory = document.createElement("li");
 

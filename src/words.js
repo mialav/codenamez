@@ -78,7 +78,7 @@ let words = [
   },
   {
     word: "kiwi",
-    categories: ["food", "fruit"]
+    categories: ["food", "fruit", "animal", "bird"]
   },
   {
     word: "banana",
@@ -150,11 +150,11 @@ let words = [
   },
   {
     word: "dog",
-    categories: ["animal", "pet"]
+    categories: ["animal", "pet", "mammal"]
   },
   {
     word: "cat",
-    categories: ["animal", "pet"]
+    categories: ["animal", "pet", "mammal"]
   },
   {
     word: "fish",
@@ -162,15 +162,15 @@ let words = [
   },
   {
     word: "giraffe",
-    categories: ["animal"]
+    categories: ["animal", "mammal"]
   },
   {
     word: "lion",
-    categories: ["animal"]
+    categories: ["animal", "predator", "mammal"]
   },
   {
     word: "tiger",
-    categories: ["animal"]
+    categories: ["animal", "predator", "mammal"]
   },
   {
     word: "penguin",
@@ -178,15 +178,15 @@ let words = [
   },
   {
     word: "mouse",
-    categories: ["animal", "nature", "pet", "pest"]
+    categories: ["animal", "nature", "pet", "pest", "mammal"]
   },
   {
     word: "rat",
-    categories: ["animal", "nature", "pet", "pest"]
+    categories: ["animal", "nature", "pet", "pest", "mammal"]
   },
   {
     word: "snake",
-    categories: ["animal", "nature", "pet"]
+    categories: ["animal", "nature", "pet", "predator"]
   },
   {
     word: "cow",
@@ -210,19 +210,19 @@ let words = [
   },
   {
     word: "mother",
-    categories: ["person", "family", "parent"]
+    categories: ["person", "family", "parent", "mammal", "female"]
   },
   {
     word: "father",
-    categories: ["person", "family", "parent"]
+    categories: ["person", "family", "parent", "mammal", "male"]
   },
   {
     word: "son",
-    categories: ["person", "family"]
+    categories: ["person", "family", "mammal", "male", "child"]
   },
   {
     word: "daughter",
-    categories: ["person", "family"]
+    categories: ["person", "family", "mammal", "female", "child"]
   },
   {
     word: "basil",
@@ -254,23 +254,23 @@ let words = [
   },
   {
     word: "Finland",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "country", "europe", "scandinavia"]
   },
   {
     word: "Sweden",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "country", "europe", "scandinavia"]
   },
   {
     word: "Germany",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "country", "europe"]
   },
   {
     word: "France",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "country", "europe"]
   },
   {
     word: "China",
-    categories: ["geography", "country", "Asia"]
+    categories: ["geography", "country", "asia"]
   },
   {
     word: "USA",
@@ -278,50 +278,130 @@ let words = [
   },
   {
     word: "Poland",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "country", "europe"]
   },
   {
     word: "Estonia",
-    categories: ["geography", "country", "Europe"]
+    categories: ["geography", "country", "europe"]
   },
   {
     word: "Helsinki",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe", "scandinavia"]
   },
   {
     word: "Stockholm",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe", "scandinavia"]
+  },
+  {
+    word: "Norway",
+    categories: ["geography", "country", "europe", "scandinavia"]
+  },
+  {
+    word: "Oslo",
+    categories: ["geography", "city", "europe", "scandinavia"]
   },
   {
     word: "Berlin",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe", "germany"]
   },
   {
     word: "Munich",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe", "germany"]
   },
   {
     word: "Hamburg",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe", "germany"]
   },
   {
     word: "Tallinn",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe"]
   },
   {
     word: "Paris",
-    categories: ["geography", "city", "Europe"]
+    categories: ["geography", "city", "europe"]
   },
   {
     word: "Shanghai",
-    categories: ["geography", "city", "Asia"]
+    categories: ["geography", "city", "asia"]
   },
   {
     word: "Tokyo",
-    categories: ["geography", "city", "Asia"]
+    categories: ["geography", "city", "asia"]
   },
   {
     word: "Bangkok",
-    categories: ["geography", "city", "Asia"]
+    categories: ["geography", "city", "asia"]
+  },
+  {
+    word: "ant",
+    categories: ["animal", "insect", "nature", "pest"]
+  },
+  {
+    word: "wasp",
+    categories: ["animal", "insect", "nature"]
+  },
+  {
+    word: "beetle",
+    categories: ["animal", "insect", "nature"]
+  },
+  {
+    word: "butterfly",
+    categories: ["animal", "insect", "nature"]
+  },
+  {
+    word: "moth",
+    categories: ["animal", "insect", "nature", "pest"]
+  },
+  {
+    word: "cricket",
+    categories: ["animal", "insect", "nature"]
+  },
+  {
+    word: "ostrich",
+    categories: ["animal", "bird"]
+  },
+  {
+    word: "pigeon",
+    categories: ["animal", "bird"]
+  },
+  {
+    word: "squirrel",
+    categories: ["animal", "mammal", "rodent", "nature"]
+  },
+  {
+    word: "hamster",
+    categories: ["animal", "mammal", "rodent", "nature", "pet"]
+  },
+  {
+    word: "owl",
+    categories: ["animal", "bird", "predator"]
+  },
+  {
+    word: "sister",
+    categories: ["person", "mammal", "family", "sibling", "female"]
+  },
+  {
+    word: "brother",
+    categories: ["person", "mammal", "family", "sibling", "male"]
+  },
+  {
+    word: "lime",
+    categories: ["food", "fruit", "citrus"]
+  },
+  {
+    word: "mandarin",
+    categories: ["food", "fruit", "citrus"]
+  },
+  {
+    word: "cousin",
+    categories: ["person", "family", "mammal"]
+  },
+  {
+    word: "aunt",
+    categories: ["person", "family", "mammal", "female"]
+  },
+  {
+    word: "uncle",
+    categories: ["person", "family", "mammal", "male"]
   }
 ];
