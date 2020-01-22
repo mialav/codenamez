@@ -1,5 +1,5 @@
 //set minutes
-var mins = 1;
+var mins = 2;
 
 //calculate the seconds
 var secs = mins * 60;
@@ -31,10 +31,10 @@ function Decrement() {
 
   if (mins < 0) {
     secs--;
-    setTimeout("Decrement()", 100);
+    setTimeout("Decrement()", 1000);
   } else if (secs > 0) {
     secs--;
-    setTimeout("Decrement()", 100);
+    setTimeout("Decrement()", 1000);
   } else {
     gameOver();
   }
@@ -79,6 +79,20 @@ function gameOver() {
 
   // stop title colors from changing
   clearTimeout(colorTimeout);
-//   letter.style.color = "#ffffff";
 
+  // randomize gif at end
+
+  function randomGif() {
+    let randomNumber = Math.floor(Math.random() * 10);
+
+    return "images/win-" + randomNumber + ".gif";
+  }
+
+  if (totalPoints > 0) {
+    document.querySelector(".final-gif").innerHTML =
+      '<img src="' + randomGif() + '" width="100px">';
+  } else {
+    document.querySelector(".final-gif").innerHTML =
+      '<img src="images/fail.gif" width="100px">';
+  }
 }
