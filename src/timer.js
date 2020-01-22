@@ -31,10 +31,10 @@ function Decrement() {
 
   if (mins < 0) {
     secs--;
-    setTimeout("Decrement()", 1000);
+    setTimeout("Decrement()", 100);
   } else if (secs > 0) {
     secs--;
-    setTimeout("Decrement()", 1000);
+    setTimeout("Decrement()", 100);
   } else {
     gameOver();
   }
@@ -76,4 +76,9 @@ function gameOver() {
   for (let i = 0; i < $cardSlot.length; i++) {
     $cardSlot[i].innerText = initialCards[i];
   }
+
+  // stop title colors from changing
+  clearTimeout(colorTimeout);
+//   letter.style.color = "#ffffff";
+
 }

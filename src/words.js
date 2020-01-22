@@ -230,7 +230,7 @@ let words = [
   },
   {
     word: "mint",
-    categories: ["food", "plant", "herb", "spice"]
+    categories: ["food", "plant", "herb", "spice", "color"]
   },
   {
     word: "coriander",
@@ -386,11 +386,11 @@ let words = [
   },
   {
     word: "lime",
-    categories: ["food", "fruit", "citrus"]
+    categories: ["food", "fruit", "citrus", "color"]
   },
   {
     word: "mandarin",
-    categories: ["food", "fruit", "citrus"]
+    categories: ["food", "fruit", "citrus", "language"]
   },
   {
     word: "cousin",
@@ -403,5 +403,41 @@ let words = [
   {
     word: "uncle",
     categories: ["person", "family", "mammal", "male"]
+  },
+  {
+    word: "peach",
+    categories: ["fruit", "food", "color"]
+  },
+  {
+    word: "platypus",
+    categories: ["animal", "mammal", "nature"]
+  },
+  {
+    word: "Finnish",
+    categories: ["language", "nationality"]
+  },
+  {
+    word: "German",
+    categories: ["language", "nationality"]
+  },
+  {
+    word: "French",
+    categories: ["language", "nationality"]
+  },
+  {
+    word: "American",
+    categories: ["nationality"]
+  },
+  {
+    word: "English",
+    categories: ["language", "nationality"]
+  },
+  {
+    word: "cactus",
+    categories: ["plant", "nature"]
+  },
+  {
+    word: "carrot",
+    categories: ["food", "vegetable"]
   }
 ];

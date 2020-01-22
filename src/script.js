@@ -20,6 +20,8 @@ function changeColor() {
   letters.innerHTML = join;
 }
 
+
+
 // SHOW/HIDE INSTRUCTIONS //
 let $instructions = document.querySelector(".instructions");
 console.log($instructions);

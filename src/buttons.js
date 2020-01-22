@@ -3,10 +3,11 @@ var $stopButton = document.getElementsByClassName(".stop-btn");
 
 let startCounter = 0;
 
+let colorTimeout = "";
 $startButton.addEventListener("click", function() {
   if (startCounter < 1) {
     countdown();
-    setInterval(changeColor, 100);
+    colorTimeout = setInterval(changeColor, 100);
     addRandomCards();
     startCounter++;
 
