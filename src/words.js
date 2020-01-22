@@ -158,7 +158,7 @@ let words = [
   },
   {
     word: "fish",
-    categories: ["animal", "pet", "nature"]
+    categories: ["animal", "pet", "nature", "food"]
   },
   {
     word: "giraffe",

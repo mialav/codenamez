@@ -1,8 +1,14 @@
 //set minutes
-var mins = 0.5;
+var mins = 1;
 
 //calculate the seconds
 var secs = mins * 60;
+
+minutes = document.getElementById("minutes");
+seconds = document.getElementById("seconds");
+
+minutes.innerText = pad2(Math.floor(secs / 60));
+seconds.innerText = pad2(secs - Math.round(mins * 60));
 
 //countdown function is evoked when page is loaded
 function countdown() {
@@ -11,44 +17,28 @@ function countdown() {
 
 //Decrement function decrement the value.
 function Decrement() {
-  if (document.getElementById) {
-    minutes = document.getElementById("minutes");
-    seconds = document.getElementById("seconds");
-
-    //if less than a minute remaining
-    //Display only seconds value.
-    if (seconds < 59) {
-      seconds.innerText = secs;
-    }
-
-    //Display both minutes and seconds
-    //getminutes and getseconds is used to
-    //get minutes and seconds
-    else {
-      minutes.innerText = getminutes();
-      seconds.innerText = getseconds();
-    }
-    //when less than a minute remaining
-    //colour of the minutes and seconds
-    //changes to red
-    if (mins < 1) {
-      minutes.style.color = "red";
-      seconds.style.color = "red";
-    }
-    //if seconds becomes zero,
-    //then page alert time up
-    if (mins < 0) {
-      //   alert("time up");
-      //   minutes.value = 0;
-      //   seconds.value = 0;
-      // clearTimeout();
-    }
-    //if seconds > 0 then seconds is decremented
-    else {
-      secs--;
-      setTimeout("Decrement()", 1000);
-    }
+  if (seconds < 59) {
+    seconds.innerText = secs;
+  } else {
+    minutes.innerText = getminutes();
+    seconds.innerText = getseconds();
   }
+
+  if (mins < 1) {
+    minutes.style.color = "red";
+    seconds.style.color = "red";
+  }
+
+  if (mins < 0) {
+    secs--;
+    setTimeout("Decrement()", 1000);
+  } else if (secs > 0) {
+    secs--;
+    setTimeout("Decrement()", 1000);
+  } else {
+    gameOver();
+  }
+  //   }
 }
 
 function getminutes() {
@@ -65,4 +55,20 @@ function getseconds() {
 
 function pad2(number) {
   return (number < 10 ? "0" : "") + number;
+}
+
+// once time is up
+function gameOver() {
+  // set timer to 0
+  secs = 0;
+  mins = 0;
+
+  // show pop up div of points
+  document.querySelector(".game-over").style.display = "block";
+  document.querySelector("#points-at-end").innerText = totalPoints;
+
+  // reset cards to code
+  for (let i = 0; i < $cardSlot.length; i++) {
+    $cardSlot[i].innerText = initialCards[i];
+  }
 }

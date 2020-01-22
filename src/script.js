@@ -35,6 +35,15 @@ $instructions.onclick = function() {
 // card slots in game board
 let $cardSlot = document.getElementsByClassName("word");
 
+// array of initial symbols on cards
+let initialCards = [];
+
+for (let i = 0; i < $cardSlot.length; i++) {
+  let word = document.querySelectorAll(".word")[i].innerText;
+
+  initialCards.push(word);
+}
+
 // empty array for randomized cards in play
 let currentCards = [];
 

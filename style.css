@@ -137,7 +137,28 @@ input[type="submit"] {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-/* Footer */
+/* Game over */
+
+.game-over {
+  display: none;
+  position: fixed;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border: 1px dotted #ffffff;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.game-over > img {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100px;
+}
+
+#reload {
+    margin: 20px;
+}

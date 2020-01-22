@@ -19,12 +19,12 @@
           <li>If a category matches more than one word, you get one point per matched word (e.g. 2 words = 2 points, 3 words = 3 points).</li>
           <li>The game is finished after one minute.</li>
       </ol>
-      <p>Hint: Categories are always one word, singular.</p>
+      <p>Hint: Categories are always one word, singular.</p> <span id="hide-instructions" class="hidden">Click this box to view/hide the instructions.</span>
     </div>
     <div class="content">
         <div class="time-and-points">
             <div class="timer">
-                <h3>Time: <span id="minutes">00</span>:<span id="seconds">30</span></h3>
+                <h3>Time: <span id="minutes"></span>:<span id="seconds"></span></h3>
             </div>
             <div class="start"><button class="start-btn">START</button></div>
             <div class="points">
@@ -59,17 +59,20 @@
               <input type="text" name="category" placeholder="Enter category" id="guess" autocomplete="off"><input type="submit" value="GO">
             </div>
               <p class="category"><ul id="categories-correct">
-                <!-- <li>Category</li>
-                <li>Category</li>
-                <li>Category</li>
-                <li>Category</li>
-                <li>Category</li>
-                <li>Category</li> -->
+                
             </ul></p>
               
           </form>
+
+          
         </div>
       </div>
+    </div>
+    <div class="game-over">
+      FINISHED!<br>
+      Points: <span id="points-at-end">0</span><br>
+      <button id="reload">New game</button><br>
+      <img src="images/win-doge.gif" >
     </div>
     <!-- <div class="footer"></div> -->
 

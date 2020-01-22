@@ -12,6 +12,8 @@ $startButton.addEventListener("click", function() {
     startCounter++;
 
     $rules.classList.toggle("hidden");
+    document.querySelector("#hide-instructions").classList.toggle("hidden");
+
     // turn start button to stop button
     /* 
     $startButton.classList.remove("start-btn");
@@ -22,6 +24,12 @@ $startButton.addEventListener("click", function() {
     }
     
 });
+
+let $newGameButton = document.querySelector("#reload");
+
+$newGameButton.addEventListener("click", function() {
+    document.location.reload(true);
+})
 
 
 
