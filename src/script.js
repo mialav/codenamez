@@ -93,7 +93,7 @@ function guessCategory(e) {
 
     totalPoints += categoryCounter;
 
-    $categoryInput.value = "";
+    $categoryInput.reset();
   }
 
   $points.innerText = totalPoints;
