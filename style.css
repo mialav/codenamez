@@ -100,7 +100,7 @@ table {
 
 .categories {
   width: 30%;
-  height: 50vh;
+  min-height: 50vh;
   border: 1px dotted #ffffff;
 }
 

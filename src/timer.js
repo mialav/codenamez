@@ -67,6 +67,11 @@ function gameOver() {
   document.querySelector(".game-over").style.display = "block";
   document.querySelector("#points-at-end").innerText = totalPoints;
 
+  // hide next button
+  document.querySelector(".next-btn").classList.toggle("hidden");
+
+  $categoryInput.classList.toggle("hidden");
+
   // reset cards to code
   for (let i = 0; i < $cardSlot.length; i++) {
     $cardSlot[i].innerText = initialCards[i];
