@@ -20,8 +20,6 @@ function changeColor() {
   letters.innerHTML = join;
 }
 
-
-
 // SHOW/HIDE INSTRUCTIONS //
 let $instructions = document.querySelector(".instructions");
 console.log($instructions);
@@ -82,13 +80,13 @@ let totalPoints = 0;
 
 let currentCategories = [];
 
-if (currentCards.length > 1) {
-  for (let card of currentCards) {
-    currentCategories.push(card.categories);
-  }
-}
+// if (currentCards.length > 1) {
+//   for (let card of currentCards) {
+//     currentCategories.push(card.categories);
+//   }
+// }
 
-let correctCategories = new Set(currentCategories.flat());
+// let correctCategories = new Set(currentCategories.flat());
 
 // GUESSING CATEGORIES INPUT //
 $categoryInput.addEventListener("submit", guessCategory);
@@ -102,29 +100,33 @@ function guessCategory(e) {
 
   let categoryCounter = 0;
 
-  for (let i = 0; i < currentCards.length; i++) {
-    if (currentCards[i].categories.indexOf(newGuess) != -1) {
-      categoryCounter++;
-      $cardSlot[i].style.backgroundColor = "pink";
-      $cardSlot[i].style.color = "black";
-      setTimeout(function() {
-        $cardSlot[i].style.backgroundColor = "black";
-        $cardSlot[i].style.color = "#ffffff";
-      }, 1000);
+  if (currentCategories.indexOf(newGuess) == -1) {
+    for (let i = 0; i < currentCards.length; i++) {
+      if (currentCards[i].categories.indexOf(newGuess) != -1) {
+        categoryCounter++;
+        $cardSlot[i].style.backgroundColor = "pink";
+        $cardSlot[i].style.color = "black";
+        setTimeout(function() {
+          $cardSlot[i].style.backgroundColor = "black";
+          $cardSlot[i].style.color = "#ffffff";
+        }, 1000);
+      }
     }
+
+    if (categoryCounter > 1) {
+      correctCategory.appendChild(
+        document.createTextNode(newGuess + " / " + categoryCounter + " points")
+      );
+
+      currentCategories.push(newGuess);
+      
+      $categoriesCorrect.appendChild(correctCategory);
+
+      totalPoints += categoryCounter;
+
+      $categoryInput.reset();
+    }
+
+    $points.innerText = totalPoints;
   }
-
-  if (categoryCounter > 1) {
-    correctCategory.appendChild(
-      document.createTextNode(newGuess + " / " + categoryCounter + " points")
-    );
-
-    $categoriesCorrect.appendChild(correctCategory);
-
-    totalPoints += categoryCounter;
-
-    $categoryInput.reset();
-  }
-
-  $points.innerText = totalPoints;
 }

@@ -190,7 +190,7 @@ let words = [
   },
   {
     word: "cow",
-    categories: ["animal", "nature"]
+    categories: ["animal", "nature", "mammal"]
   },
   {
     word: "beer",

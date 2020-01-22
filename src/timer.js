@@ -1,8 +1,8 @@
 //set minutes
-var mins = 2;
+let mins = 2;
 
 //calculate the seconds
-var secs = mins * 60;
+let secs = mins * 60;
 
 minutes = document.getElementById("minutes");
 seconds = document.getElementById("seconds");

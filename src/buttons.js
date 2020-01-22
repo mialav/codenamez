@@ -1,5 +1,5 @@
-var $startButton = document.querySelector(".start-btn");
-var $stopButton = document.getElementsByClassName(".stop-btn");
+let $startButton = document.querySelector(".start-btn");
+let $stopButton = document.getElementsByClassName(".stop-btn");
 
 let startCounter = 0;
 
@@ -36,17 +36,17 @@ $newGameButton.addEventListener("click", function() {
   document.location.reload(true);
 });
 
-
 // NEXT BUTTON
-
 
 let $nextButton = document.querySelector(".next-btn");
 
 $nextButton.addEventListener("click", function() {
-    console.log("click");
-    addRandomCards();
+  console.log("click");
+  addRandomCards();
 
-    while ($categoriesCorrect.firstChild) {
-        $categoriesCorrect.removeChild($categoriesCorrect.firstChild);
-      }
-})
+  while ($categoriesCorrect.firstChild) {
+    $categoriesCorrect.removeChild($categoriesCorrect.firstChild);
+  }
+
+  currentCategories = [];
+});
