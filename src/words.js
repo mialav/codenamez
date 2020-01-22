@@ -178,11 +178,11 @@ let words = [
   },
   {
     word: "mouse",
-    categories: ["animal", "nature", "pet", "pest", "mammal"]
+    categories: ["animal", "nature", "pet", "pest", "mammal", "rodent"]
   },
   {
     word: "rat",
-    categories: ["animal", "nature", "pet", "pest", "mammal"]
+    categories: ["animal", "nature", "pet", "pest", "mammal", "rodent"]
   },
   {
     word: "snake",

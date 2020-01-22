@@ -55,7 +55,7 @@ function generateRandomCard() {
 
 function addRandomCards() {
   currentCards = [];
-  
+
   while (currentCards.length < $cardSlot.length) {
     let card = generateRandomCard();
 
@@ -80,12 +80,11 @@ let totalPoints = 0;
 
 let currentCategories = [];
 
-if (currentCards.length >1) {
+if (currentCards.length > 1) {
   for (let card of currentCards) {
     currentCategories.push(card.categories);
-  };
+  }
 }
-
 
 let correctCategories = new Set(currentCategories.flat());
 
@@ -104,6 +103,12 @@ function guessCategory(e) {
   for (let i = 0; i < currentCards.length; i++) {
     if (currentCards[i].categories.indexOf(newGuess) != -1) {
       categoryCounter++;
+      $cardSlot[i].style.backgroundColor = "pink";
+      $cardSlot[i].style.color = "black";
+      setTimeout(function() {
+        $cardSlot[i].style.backgroundColor = "black";
+        $cardSlot[i].style.color = "#ffffff";
+      }, 1000);
     }
   }
 
