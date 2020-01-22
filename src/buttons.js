@@ -1,18 +1,19 @@
 var $startButton = document.querySelector(".start-btn");
 var $stopButton = document.getElementsByClassName(".stop-btn");
 
-
 let startCounter = 0;
 
 $startButton.addEventListener("click", function() {
-    if (startCounter < 1) {
-    countdown(); 
-    setInterval(changeColor, 100); 
+  if (startCounter < 1) {
+    countdown();
+    setInterval(changeColor, 100);
     addRandomCards();
     startCounter++;
 
     $rules.classList.toggle("hidden");
     document.querySelector("#hide-instructions").classList.toggle("hidden");
+
+    document.querySelector(".next-btn").classList.toggle("hidden");
 
     // turn start button to stop button
     /* 
@@ -21,19 +22,19 @@ $startButton.addEventListener("click", function() {
     console.log($startButton.className);
 
     $startButton.innerText = "STOP"; */
-    }
-    
+  }
 });
 
 let $newGameButton = document.querySelector("#reload");
 
 $newGameButton.addEventListener("click", function() {
-    document.location.reload(true);
+  document.location.reload(true);
+});
+
+
+let $nextButton = document.querySelector(".next-btn");
+
+$nextButton.addEventListener("click", function() {
+    console.log("click");
+    addRandomCards();
 })
-
-
-
-
-
-
-

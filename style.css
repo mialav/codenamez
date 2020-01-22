@@ -140,6 +140,14 @@ input[type="submit"] {
   display: none;
 }
 
+/* Next button */
+
+.next-btn {
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+
 /* Game over */
 
 .game-over {

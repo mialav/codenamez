@@ -54,7 +54,9 @@ function generateRandomCard() {
 }
 
 function addRandomCards() {
-  while (currentCards.length <= $cardSlot.length) {
+  currentCards = [];
+  
+  while (currentCards.length < $cardSlot.length) {
     let card = generateRandomCard();
 
     // make sure the generated cards are unique
@@ -68,7 +70,7 @@ function addRandomCards() {
   }
 }
 
-// GUESS CATEGORIES //
+// CATEGORIES //
 
 let $points = document.getElementById("point-amount");
 let $categoryInput = document.querySelector(".category-input");
@@ -76,6 +78,18 @@ let $categoriesCorrect = document.getElementById("categories-correct");
 
 let totalPoints = 0;
 
+let currentCategories = [];
+
+if (currentCards.length >1) {
+  for (let card of currentCards) {
+    currentCategories.push(card.categories);
+  };
+}
+
+
+let correctCategories = new Set(currentCategories.flat());
+
+// GUESSING CATEGORIES INPUT //
 $categoryInput.addEventListener("submit", guessCategory);
 
 function guessCategory(e) {
