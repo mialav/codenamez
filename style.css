@@ -125,14 +125,13 @@ input[type="submit"] {
 /* Instructions */
 
 .instructions {
-  width: 50%;
+  width: 45%;
   border: 1px dotted #ffffff;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .rules {
-  width: 70%;
   margin-left: 30px;
 }
 
