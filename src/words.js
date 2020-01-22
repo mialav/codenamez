@@ -162,19 +162,19 @@ let words = [
   },
   {
     word: "giraffe",
-    categories: ["animal", "mammal"]
+    categories: ["animal", "mammal", "nature"]
   },
   {
     word: "lion",
-    categories: ["animal", "predator", "mammal", "feline"]
+    categories: ["animal", "predator", "mammal", "feline", "nature"]
   },
   {
     word: "tiger",
-    categories: ["animal", "predator", "mammal", "feline"]
+    categories: ["animal", "predator", "mammal", "feline", "nature"]
   },
   {
     word: "penguin",
-    categories: ["animal", "bird"]
+    categories: ["animal", "bird", "nature"]
   },
   {
     word: "mouse",
@@ -370,11 +370,11 @@ let words = [
   },
   {
     word: "hamster",
-    categories: ["animal", "mammal", "rodent", "nature", "pet"]
+    categories: ["animal", "mammal", "rodent", "pet"]
   },
   {
     word: "owl",
-    categories: ["animal", "bird", "predator"]
+    categories: ["animal", "bird", "predator", "nature"]
   },
   {
     word: "sister",
@@ -442,7 +442,7 @@ let words = [
   },
   {
     word: "scorpion",
-    categories: ["animal", "predator"]
+    categories: ["animal", "predator", "nature"]
   },
   {
     word: "hamburger",
