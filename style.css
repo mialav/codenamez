@@ -155,7 +155,8 @@ input[type="submit"] {
   width: 400px;
   padding-top: 20px;
   padding-bottom: 0px;
-  border: 1px dotted #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
   margin-top: 10%;
   text-align: center;
 }
