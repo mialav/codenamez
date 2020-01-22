@@ -118,7 +118,7 @@ let words = [
   },
   {
     word: "river",
-    categories: ["nature", "liquid"]
+    categories: ["nature", "liquid", "water"]
   },
   {
     word: "forest",
@@ -154,11 +154,11 @@ let words = [
   },
   {
     word: "cat",
-    categories: ["animal", "pet", "mammal"]
+    categories: ["animal", "pet", "mammal", "feline"]
   },
   {
     word: "fish",
-    categories: ["animal", "pet", "nature", "food"]
+    categories: ["animal", "pet", "nature", "food", "water"]
   },
   {
     word: "giraffe",
@@ -166,11 +166,11 @@ let words = [
   },
   {
     word: "lion",
-    categories: ["animal", "predator", "mammal"]
+    categories: ["animal", "predator", "mammal", "feline"]
   },
   {
     word: "tiger",
-    categories: ["animal", "predator", "mammal"]
+    categories: ["animal", "predator", "mammal", "feline"]
   },
   {
     word: "penguin",
@@ -190,7 +190,7 @@ let words = [
   },
   {
     word: "cow",
-    categories: ["animal", "nature", "mammal"]
+    categories: ["animal", "mammal"]
   },
   {
     word: "beer",
@@ -439,5 +439,57 @@ let words = [
   {
     word: "carrot",
     categories: ["food", "vegetable"]
+  },
+  {
+    word: "scorpion",
+    categories: ["animal", "predator"]
+  },
+  {
+    word: "hamburger",
+    categories: ["food", "dinner"]
+  },
+  {
+    word: "chips",
+    categories: ["food", "snack"]
+  },
+  {
+    word: "yogurt",
+    categories: ["food", "breakfast", "dairy"]
+  },
+  {
+    word: "butter",
+    categories: ["food", "dairy"]
+  },
+  {
+    word: "chocolate",
+    categories: ["food", "dessert", "candy"]
+  },
+  {
+    word: "licorice",
+    categories: ["food", "dessert", "candy"]
+  },
+  {
+    word: "liquor",
+    categories: ["liquid", "drink", "alcohol"]
+  },
+  {
+    word: "Canadian",
+    categories: ["nationality"]
+  },
+  {
+    word: "dolphin",
+    categories: ["animal", "mammal", "nature", "water"]
+  },
+  {
+    word: "ocean",
+    categories: ["water", "nature", "liquid"]
+  },
+  {
+    word: "whale",
+    categories: ["water", "nature", "mammal", "animal"]
+  },
+  {
+    word: "shark",
+    categories: ["animal", "water", "nature", "predator"]
   }
 ];

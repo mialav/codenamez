@@ -83,12 +83,12 @@ function gameOver() {
   // randomize gif at end
 
   function randomGif() {
-    let randomNumber = Math.floor(Math.random() * 10);
+    let randomNumber = Math.floor(Math.random() * 12);
 
     return "images/win-" + randomNumber + ".gif";
   }
 
-  if (totalPoints > 0) {
+  if (totalPoints > 10) {
     document.querySelector(".final-gif").innerHTML =
       '<img src="' + randomGif() + '" width="100px">';
   } else {
