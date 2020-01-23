@@ -31,10 +31,10 @@ function Decrement() {
 
   if (mins < 0) {
     secs--;
-    setTimeout("Decrement()", 100);
+    setTimeout("Decrement()", 1000);
   } else if (secs > 0) {
     secs--;
-    setTimeout("Decrement()", 100);
+    setTimeout("Decrement()", 1000);
   } else {
     gameOver();
   }
