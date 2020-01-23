@@ -142,10 +142,10 @@ input[type="submit"] {
 /* Next button */
 
 .next-btn {
-    padding: 5px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-  }
+  padding: 5px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
 
 /* Game over */
 
@@ -162,11 +162,11 @@ input[type="submit"] {
 }
 
 .game-over > img {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    width: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: 100px;
 }
 
 #reload {
-    margin: 20px;
+  margin: 20px;
 }
