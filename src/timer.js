@@ -31,10 +31,10 @@ function Decrement() {
 
   if (mins < 0) {
     secs--;
-    setTimeout("Decrement()", 1000);
+    setTimeout("Decrement()", 100);
   } else if (secs > 0) {
     secs--;
-    setTimeout("Decrement()", 1000);
+    setTimeout("Decrement()", 100);
   } else {
     gameOver();
   }
@@ -72,9 +72,14 @@ function gameOver() {
 
   let highScore = parseInt(localStorage.getItem("highscore"));
 
-  if (totalPoints > highScore) {
-    localStorage.setItem("highscore", totalPoints.toString());
+  if (highScore !== null) {
+    if (totalPoints > highScore) {
+        localStorage.setItem("highscore", totalPoints.toString());
+      }
+  } else {
+      localStorage.setItem("highscore", totalPoints.toString());
   }
+  
   document.querySelector("#high-score").innerText = localStorage.getItem(
     "highscore"
   );
