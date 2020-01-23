@@ -69,16 +69,14 @@ function gameOver() {
   document.querySelector("#points-at-end").innerText = totalPoints;
 
   // set highscore
+  if (localStorage.getItem("highscore") == null) {
+    localStorage.setItem("highscore", "0");
+  }
 
   let highScore = parseInt(localStorage.getItem("highscore"));
 
-  if (highScore !== null) {
-    if (totalPoints > highScore) {
-      console.log("Highscore if", highScore, totalPoints);
-      localStorage.setItem("highscore", totalPoints.toString());
-    }
-  } else {
-    console.log("Highscore if two", highScore, totalPoints);
+  if (totalPoints > highScore) {
+    console.log("Highscore if", highScore, totalPoints);
     localStorage.setItem("highscore", totalPoints.toString());
   }
 
