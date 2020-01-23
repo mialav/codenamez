@@ -33,7 +33,7 @@ $startButton.addEventListener("click", function() {
 let $newGameButton = document.querySelector("#reload");
 
 $newGameButton.addEventListener("click", function() {
-  document.location.reload(true);
+  document.location.reload();
 });
 
 // NEXT BUTTON

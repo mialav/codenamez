@@ -57,7 +57,8 @@ function pad2(number) {
   return (number < 10 ? "0" : "") + number;
 }
 
-// once time is up
+// END OF THE GAME
+
 function gameOver() {
   // set timer to 0
   secs = 0;
@@ -66,6 +67,17 @@ function gameOver() {
   // show pop up div of points
   document.querySelector(".game-over").style.display = "block";
   document.querySelector("#points-at-end").innerText = totalPoints;
+
+  // set highscore
+
+  let highScore = parseInt(localStorage.getItem("highscore"));
+
+  if (totalPoints > highScore) {
+    localStorage.setItem("highscore", totalPoints.toString());
+  }
+  document.querySelector("#high-score").innerText = localStorage.getItem(
+    "highscore"
+  );
 
   // hide next button
   document.querySelector(".next-btn").classList.toggle("hidden");

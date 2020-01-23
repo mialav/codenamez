@@ -21,6 +21,7 @@ function changeColor() {
 }
 
 // SHOW/HIDE INSTRUCTIONS //
+
 let $instructions = document.querySelector(".instructions");
 console.log($instructions);
 let $rules = document.querySelector(".rules");
@@ -80,15 +81,10 @@ let totalPoints = 0;
 
 let currentCategories = [];
 
-// if (currentCards.length > 1) {
-//   for (let card of currentCards) {
-//     currentCategories.push(card.categories);
-//   }
-// }
 
-// let correctCategories = new Set(currentCategories.flat());
 
 // GUESSING CATEGORIES INPUT //
+
 $categoryInput.addEventListener("submit", guessCategory);
 
 function guessCategory(e) {
@@ -119,7 +115,7 @@ function guessCategory(e) {
       );
 
       currentCategories.push(newGuess);
-      
+
       $categoriesCorrect.appendChild(correctCategory);
 
       totalPoints += categoryCounter;
@@ -130,3 +126,5 @@ function guessCategory(e) {
     $points.innerText = totalPoints;
   }
 }
+
+

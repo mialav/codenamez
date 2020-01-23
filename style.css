@@ -12,8 +12,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* background-image: url("images/download.png");
-  background-attachment: fixed; */
 }
 
 .header {
