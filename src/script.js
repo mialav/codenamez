@@ -81,8 +81,6 @@ let totalPoints = 0;
 
 let currentCategories = [];
 
-
-
 // GUESSING CATEGORIES INPUT //
 
 $categoryInput.addEventListener("submit", guessCategory);

@@ -74,12 +74,16 @@ function gameOver() {
 
   if (highScore !== null) {
     if (totalPoints > highScore) {
-        localStorage.setItem("highscore", totalPoints.toString());
-      }
-  } else {
+      console.log("Highscore if", highScore, totalPoints);
       localStorage.setItem("highscore", totalPoints.toString());
+    }
+  } else {
+    console.log("Highscore if two", highScore, totalPoints);
+    localStorage.setItem("highscore", totalPoints.toString());
   }
-  
+
+  // show highscore
+
   document.querySelector("#high-score").innerText = localStorage.getItem(
     "highscore"
   );
