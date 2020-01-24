@@ -22,7 +22,7 @@ let words = [
   },
   {
     word: "chicken",
-    categories: ["food", "animal", "bird", "dinner"]
+    categories: ["food", "animal", "bird", "dinner", "meat"]
   },
   {
     word: "soup",
@@ -158,7 +158,7 @@ let words = [
   },
   {
     word: "fish",
-    categories: ["animal", "pet", "nature", "food", "water"]
+    categories: ["animal", "pet", "nature", "food", "water", "meat"]
   },
   {
     word: "giraffe",
@@ -254,27 +254,27 @@ let words = [
   },
   {
     word: "Finland",
-    categories: ["geography", "country", "europe", "scandinavia"]
+    categories: ["geography", "country", "europe", "scandinavia", "place", "location"]
   },
   {
     word: "Sweden",
-    categories: ["geography", "country", "europe", "scandinavia"]
+    categories: ["geography", "country", "europe", "scandinavia", "place", "location"]
   },
   {
     word: "Germany",
-    categories: ["geography", "country", "europe"]
+    categories: ["geography", "country", "europe", "place", "location"]
   },
   {
     word: "France",
-    categories: ["geography", "country", "europe"]
+    categories: ["geography", "country", "europe", "place", "location"]
   },
   {
     word: "China",
-    categories: ["geography", "country", "asia"]
+    categories: ["geography", "country", "asia", "place", "location"]
   },
   {
     word: "USA",
-    categories: ["geography", "country"]
+    categories: ["geography", "country", "place", "location", "america"]
   },
   {
     word: "Poland",
@@ -282,55 +282,55 @@ let words = [
   },
   {
     word: "Estonia",
-    categories: ["geography", "country", "europe"]
+    categories: ["geography", "country", "europe", "place", "location"]
   },
   {
     word: "Helsinki",
-    categories: ["geography", "city", "europe", "scandinavia"]
+    categories: ["geography", "city", "europe", "scandinavia", "place", "location"]
   },
   {
     word: "Stockholm",
-    categories: ["geography", "city", "europe", "scandinavia"]
+    categories: ["geography", "city", "europe", "scandinavia", "place", "location"]
   },
   {
     word: "Norway",
-    categories: ["geography", "country", "europe", "scandinavia"]
+    categories: ["geography", "country", "europe", "scandinavia", "place", "location"]
   },
   {
     word: "Oslo",
-    categories: ["geography", "city", "europe", "scandinavia"]
+    categories: ["geography", "city", "europe", "scandinavia", "place", "location"]
   },
   {
     word: "Berlin",
-    categories: ["geography", "city", "europe", "germany"]
+    categories: ["geography", "city", "europe", "germany", "place", "location"]
   },
   {
     word: "Munich",
-    categories: ["geography", "city", "europe", "germany"]
+    categories: ["geography", "city", "europe", "germany", "place", "location"]
   },
   {
     word: "Hamburg",
-    categories: ["geography", "city", "europe", "germany"]
+    categories: ["geography", "city", "europe", "germany", "place", "location"]
   },
   {
     word: "Tallinn",
-    categories: ["geography", "city", "europe"]
+    categories: ["geography", "city", "europe", "place", "location"]
   },
   {
     word: "Paris",
-    categories: ["geography", "city", "europe"]
+    categories: ["geography", "city", "europe", "place", "location"]
   },
   {
     word: "Shanghai",
-    categories: ["geography", "city", "asia"]
+    categories: ["geography", "city", "asia", "place", "location"]
   },
   {
     word: "Tokyo",
-    categories: ["geography", "city", "asia"]
+    categories: ["geography", "city", "asia", "place", "location"]
   },
   {
     word: "Bangkok",
-    categories: ["geography", "city", "asia"]
+    categories: ["geography", "city", "asia", "place", "location"]
   },
   {
     word: "ant",
@@ -362,7 +362,7 @@ let words = [
   },
   {
     word: "pigeon",
-    categories: ["animal", "bird"]
+    categories: ["animal", "bird", "nature"]
   },
   {
     word: "squirrel",
@@ -414,23 +414,23 @@ let words = [
   },
   {
     word: "Finnish",
-    categories: ["language", "nationality"]
+    categories: ["language", "nationality", "europe"]
   },
   {
     word: "German",
-    categories: ["language", "nationality"]
+    categories: ["language", "nationality", "europe"]
   },
   {
     word: "French",
-    categories: ["language", "nationality"]
+    categories: ["language", "nationality", "europe"]
   },
   {
     word: "American",
-    categories: ["nationality"]
+    categories: ["nationality", "america"]
   },
   {
     word: "English",
-    categories: ["language", "nationality"]
+    categories: ["language", "nationality", "europe"]
   },
   {
     word: "cactus",
@@ -474,7 +474,7 @@ let words = [
   },
   {
     word: "Canadian",
-    categories: ["nationality"]
+    categories: ["nationality", "america"]
   },
   {
     word: "dolphin",
