@@ -1,6 +1,6 @@
 # CODENAMEZ
 
-Codenamez is a Javascript game based on the popular board game [Codenames](https://en.wikipedia.org/wiki/Codenames_(board_game)).
+[Codenamez](https://mialav.github.io/codenamez/) is a Javascript game based on the popular board game [Codenames](https://en.wikipedia.org/wiki/Codenames_(board_game)).
 
 ![](images/game_screenshot.png)
 
